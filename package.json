@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/atelier-saulx/parse-query-string/issues"
   },
-  "homepage": "https://github.com/atelier-saulx/parse-query-string#readme"
+  "homepage": "https://github.com/atelier-saulx/parse-query-string#readme",
+  "prettier": "@saulx/prettier-config",
+  "eslintConfig": {
+    "extends": "@saulx/eslint-config"
+  },
+  "devDependencies": {
+    "@saulx/eslint-config": "^1.1.0",
+    "@saulx/prettier-config": "^1.0.0"
+  }
 }

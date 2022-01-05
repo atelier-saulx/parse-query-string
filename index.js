@@ -1,17 +1,17 @@
 const reducer = (params, str) => {
-  const [key, value] = str.split("=");
+  const [key, value] = str.split('=')
   if (key) {
     params[decodeURIComponent(key)] =
       value === undefined
         ? true
         : isNaN(value)
         ? decodeURIComponent(value)
-        : Number(value);
+        : Number(value)
   }
-  return params;
-};
+  return params
+}
 
-const parseQueryString = (string = location?.search || "") =>
-  string.split(/\?|&/).reduce(reducer, {});
+const parseQueryString = (string = location?.search || '') =>
+  string.split(/\?|&/).reduce(reducer, {})
 
-export default parseQueryString;
+export default parseQueryString
