@@ -11,7 +11,11 @@ const reducer = (params, str) => {
   return params
 }
 
-const parseQueryString = (string = location?.search || '') =>
-  string.split(/\?|&/).reduce(reducer, {})
+const parseQueryString = (string = location?.search || '') => {
+  return string
+    .substring(string.indexOf('?') + 1)
+    .split('&')
+    .reduce(reducer, {})
+}
 
-export default parseQueryString
+module.exports = parseQueryString
