@@ -1,0 +1,20 @@
+{
+  "name": "@saulx/parse-query-string",
+  "version": "1.0.0",
+  "description": "Minimal query string parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atelier-saulx/parse-query-string.git"
+  },
+  "keywords": [],
+  "author": "saulx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atelier-saulx/parse-query-string/issues"
+  },
+  "homepage": "https://github.com/atelier-saulx/parse-query-string#readme"
+}
